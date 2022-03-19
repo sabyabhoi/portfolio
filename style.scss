@@ -22,8 +22,17 @@ $fg-light: black;
   }
 }
 
+a {
+  color: rgb(21, 94, 117);
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .section {
-	margin-block: 0.5rem;
+  margin-block: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -43,6 +52,11 @@ $fg-light: black;
   ul {
     list-style-position: inside;
     line-height: 1.6;
+    list-style-type: disc;
+
+    ul {
+      padding-left: 1.5rem;
+    }
   }
 }
 
