@@ -23,20 +23,26 @@ $fg-light: black;
 }
 
 .section {
+	margin-block: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
 
   h2 {
-		margin-block: 0.5rem;
-		font-size: 1.875rem;
+    margin-block: 0.5rem;
+    font-size: 1.875rem;
     text-decoration: underline;
     text-decoration-thickness: 4px;
     text-decoration-color: rgba($fg-light, 0.25);
     &:hover {
       text-decoration-color: $fg-light;
     }
+  }
+
+  ul {
+    list-style-position: inside;
+    line-height: 1.6;
   }
 }
 
@@ -60,7 +66,7 @@ button {
 
 header {
   padding-block: 0.75rem;
-	font-weight: bold;
+  font-weight: bold;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -72,7 +78,7 @@ body {
     Liberation Mono, Courier New, monospace;
   font-weight: 400;
   font-size: 1rem;
-    line-height: 1.3;
+  line-height: 1.3;
   background-color: $bg-light;
   color: $fg-light;
 }
